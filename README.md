@@ -11,3 +11,12 @@ A simple TCP port scanner written in Python. Supports multithreading, timeout co
 ## Usage
 ```bash
 python3 scanner.py -H 192.168.1.10 -p 20-1024 -t 200 --timeout 0.6 --csv results.csv
+
+# Single host common range
+python3 scanner.py -H 10.0.0.5 -p 1-1024
+
+# Hostname
+python3 scanner.py -H example.com -p 22,80,443
+
+# CIDR
+python3 scanner.py -H 192.168.1.0/24 -p 80,443 -t 300 --timeout 0.5
