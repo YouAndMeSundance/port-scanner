@@ -10,6 +10,7 @@ A simple TCP port scanner written in Python. Supports multithreading, timeout co
 
 ## Usage
 ```bash
+# Extract to CSV
 python3 scanner.py -H 192.168.1.10 -p 20-1024 -t 200 --timeout 0.6 --csv results.csv
 
 # Single host common range
